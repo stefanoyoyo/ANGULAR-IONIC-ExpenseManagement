@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { LoginPagePageModule } from './Authentication/login-page/login-page.module';
+import { LoginPagePage } from './Authentication/login-page/login-page.page';
 import { ContainerPage } from './container-page/container-page.page';
-import { LoginPagePageModule } from './login-page/login-page.module';
-import { LoginPagePage } from './login-page/login-page.page';
+// import { LoginPagePageModule } from './Authentication/login-page/login-page.module';
+// import { LoginPagePage } from './Authentication/login-page/login-page.page';
+
 
 const routes: Routes = [
   {
