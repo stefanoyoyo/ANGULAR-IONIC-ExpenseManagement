@@ -1,5 +1,7 @@
 {
   "name": "ExpenseManagement",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

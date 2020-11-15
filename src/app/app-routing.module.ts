@@ -1,16 +1,25 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { ContainerPage } from './container-page/container-page.page';
+import { LoginPagePageModule } from './login-page/login-page.module';
+import { LoginPagePage } from './login-page/login-page.page';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'expenseManagement',
     pathMatch: 'full'
   },
   {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+    path: 'expenseManagement',
+    component: ContainerPage
+  },
+  {
+    path: 'expenseManagement/login',
+    // loadChildren: () => import('./login-page/login-page.module').then( m => m.LoginPagePageModule)
+    component: LoginPagePage
   }
+
 ];
 
 @NgModule({
